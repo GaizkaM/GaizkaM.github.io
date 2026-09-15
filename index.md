@@ -1,12 +1,8 @@
-<div align="center">
-
 # GAIZKA MEDINA
 **Computer Engineering Student**
 
 S'Arenal, Palma de Mallorca • +34 656 87 40 67 • gaizkamedina9@gmail.com
 [LinkedIn](https://www.linkedin.com/in/gaizka-medina) • [GitHub](https://github.com/GaizkaM)
-
-</div>
 
 ---
 

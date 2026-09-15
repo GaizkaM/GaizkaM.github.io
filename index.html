@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaizka Medina - Portfolio</title>
+    <style>
+        :root {
+            --primary: #2d3748;
+            --secondary: #4a5568;
+            --accent: #3182ce;
+            --bg: #f7fafc;
+            --paper: #ffffff;
+            --text: #1a202c;
+            --border: #edf2f7;
+        }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--paper);
+            padding: 3rem 4rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--primary);
+            letter-spacing: 0.05em;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 0.5rem;
+        }
+        .contact-info {
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            color: var(--secondary);
+        }
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 2.5rem;
+        }
+        h2 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .item-block {
+            margin-bottom: 1.5rem;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.2rem;
+        }
+        h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+        .date {
+            font-size: 0.9rem;
+            color: var(--secondary);
+            font-style: italic;
+        }
+        .role {
+            font-weight: 500;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin-top: 0;
+        }
+        ul {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.4rem;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li {
+            margin-bottom: 0.5rem;
+        }
+        .skills-list strong {
+            color: var(--primary);
+            display: inline-block;
+            width: 220px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem;
+            }
+            .item-header {
+                flex-direction: column;
+            }
+            .skills-list strong {
+                display: block;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GAIZKA MEDINA</h1>
+            <div class="subtitle">Computer Engineering Student</div>
+            <div class="contact-info">
+                S'Arenal, Palma de Mallorca &bull; +34 656 87 40 67 &bull; <a href="mailto:gaizkamedina9@gmail.com">gaizkamedina9@gmail.com</a><br>
+                <a href="https://www.linkedin.com/in/gaizka-medina" target="_blank">LinkedIn</a> &bull;
+                <a href="https://github.com/GaizkaM" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Computer Engineering student specialized in Artificial Intelligence and Fullstack development. Passionate about building efficient software solutions and automating processes through AI. Looking for opportunities to apply technical knowledge in real-world projects and learn new technologies.</p>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            <div class="item-block">
+                <div class="item-header">
+                    <h3>OMNIACCESS SL</h3>
+                    <span class="date">July 2025 - September 2025</span>
+                </div>
+                <div class="role">Backend Developer Intern</div>
+                <ul>
+                    <li>Developed and integrated APIs to enhance backend functionality and optimize data flow.</li>
+                    <li>Implemented core functions and methods in Python-based services to improve system performance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            
+            <div class="item-block">
+                <div class="item-header">
+                    <h3>Pulmonary Nodule Detection (NODE21)</h3>
+                    <span class="date">2026</span>
+                </div>
+                <div class="role">Academic Project</div>
+                <ul>
+                    <li>Developed a complete deep learning pipeline using PyTorch and Torchvision for the automated classification and detection of lung nodules in Chest X-Rays.</li>
+                    <li>Trained and evaluated Custom CNNs and Faster R-CNN architectures, implementing patient-aware data splitting and random oversampling to resolve severe class imbalance.</li>
+                </ul>
+            </div>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <h3>Custom Imperative Language Compiler</h3>
+                    <span class="date">2025 - 2026</span>
+                </div>
+                <div class="role">Academic Project</div>
+                <ul>
+                    <li>Awarded a grade of 10 for the design and implementation of a complete compiler from scratch for a custom imperative language.</li>
+                    <li>Developed the full pipeline including lexical, syntactic, and semantic analysis, intermediate code generation (3AC), and final optimized assembly output.</li>
+                </ul>
+            </div>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <h3>Multi-Agent System for Business Process Automation</h3>
+                    <span class="date">Ongoing</span>
+                </div>
+                <div class="role">Bachelor's Thesis</div>
+                <ul>
+                    <li>Development of a Multi-Agent System for Hotel Business Process Automation through N8N workflows.</li>
+                    <li>Integrating messaging platforms such as Telegram and WhatsApp to enable real-time user interaction and automated task triggering through the agent system.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            
+            <div class="item-block">
+                <div class="item-header">
+                    <h3>Universitat de les Illes Balears (UIB)</h3>
+                    <span class="date">2021 - Expected Graduation: June 2026</span>
+                </div>
+                <div class="role">Computer Engineering</div>
+                <ul>
+                    <li>Specialization in Artificial Intelligence and Computing.</li>
+                </ul>
+            </div>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <h3>NVIDIA</h3>
+                    <span class="date">2025</span>
+                </div>
+                <div class="role">Fundamentals of Deep Learning Certification</div>
+                <ul>
+                    <li>Hands-on course focused on the fundamentals of deep learning, including neural network design, data preprocessing, and GPU-based optimization.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Programming Languages:</strong> Java, Python, C/C++, SQL, HTML, CSS, JavaScript, PHP, Assembly (68k)</li>
+                <li><strong>Frameworks & Libraries:</strong> Flask, FastAPI, React, Node.js, PyTorch, Torchvision</li>
+                <li><strong>Tools & Platforms:</strong> Git, GitLab, Docker, VSCode, PyCharm, Android Studio, N8N, MySQL, Postman</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <ul>
+                <li><strong>Spanish:</strong> Native</li>
+                <li><strong>Catalan:</strong> Native</li>
+                <li><strong>English:</strong> B1 Official Certification (B2 in progress)</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
